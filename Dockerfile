@@ -1,5 +1,5 @@
 FROM centos:latest
-MAINTAINER NewstarCorporation
+MAINTAINER SreehariPremkumar
 RUN yum -y install httpd
 ADD ./website /var/www/html/website
 EXPOSE 80
