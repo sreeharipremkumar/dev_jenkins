@@ -1,6 +1,6 @@
 FROM centos:latest
 MAINTAINER SreehariPremkumar
-RUN yum -y install httpd
+RUN yum install httpd -y
 ADD ./website /var/www/html/website
-ENTRYPOINT ["/usr/sbin/httpd"] & CMD ["-D", "FOREGROUND"]
 EXPOSE 80
+CMD ["/usr/sbin/httpd","-D", "FOREGROUND"]
