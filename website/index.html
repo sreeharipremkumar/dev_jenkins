@@ -20,6 +20,7 @@ body {
   padding: 80px;
   text-align: center;
   background-image: url('images/2.png');
+  //background: #1abc9c;
   color: white;
 }
 
@@ -66,6 +67,30 @@ body {
   color: white;
 }
 
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
 
 </style>
 </head>
@@ -83,6 +108,17 @@ body {
   <a href="#" class="right">Contact</a>
 </div>
 
+<div class="row">
+  <div class="side">
+    <h1>Hello</h1>
+
+  </div>
+  <div class="main">
+    <h1>Jenkins</h1>
+    <h2>jenkins is interesting</h2>
+
+  </div>
+</div>
 
 
 </body>
